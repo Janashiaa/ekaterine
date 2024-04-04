@@ -161,3 +161,13 @@ body {
     border-radius: 20px;
     margin-top: 10px;
 }
+
+@media (max-width: 500px) {
+
+    html,
+    body {
+        background-image: url(./photos/photo1.jpg);
+        background-size: 100%, 100%;
+        background-repeat: repeat;
+    }
+}
