@@ -1,14 +1,3 @@
-window.addEventListener('load', function() {
-    prepare();
-});
-
-function prepare() {
-    document.querySelector(".start_asker_backer").style.display = "flex";
-    document.querySelector(".question1").style.display = "none";
-    document.querySelector(".question2").style.display = "none";
-    document.querySelector(".winner_backer").style.display = "none";
-}
-
 function start() {
     document.querySelector(".start_asker_backer").style.display = "none";
     document.querySelector(".question1").style.display = "flex";
