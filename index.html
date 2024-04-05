@@ -10,34 +10,172 @@
 </head>
 
 <body>
+    <div class="progress_bar_backer_float">
+        <div class="questions_counter_backer"></div>
+        <div class="progress_backer">
+            <div class="actual_progress_bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="percentage_backer"></div>
+    </div>
     <div class="whole_backer">
-        <div class="start_asker_backer">
-            <h1 class="introduction_text">Quiz about 262 scheduler</h1>
-            <h1 class="introduction_text">Are you ready to start the quiz?</h1>
-            <button class="starter_button" onclick="start()">Start</button>
-        </div>
-        <div class="question1">
-            <h1 class="question1_text">Is scheduler 262 the best in the whole departament?
-            </h1>
-            <div class="buttons_area">
-                <button class="question1_agree" onclick="question1Agree()">Yes</button>
-                <button class="question1_disagree" onclick="question1Disagree()">No</button>
+        <div class="questions_main_card">
+            <div class="question1_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        Are you ready to start the quiz about Scheduler 262?
+                    </p>
+                    <p class="question_text">
+                        You will need 90% or above to get a surprise! You'll like it.
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="start_button" onclick="startQuiz()">start</button>
+                </div>
             </div>
-        </div>
-        <div class="question2">
-            <h1 class="question1_text">Do you agree that she is your Queen?
-            </h1>
-            <div class="buttons_area">
-                <button class="question2_agree" onclick="question2Agree()">Yes</button>
-                <button class="question2_disagree" onclick="question2Disagree()">No</button>
+            <div class="question2_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        Starting with simple questions. What color is her magical hair?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q2_o1" onclick="answer21()">Blonde</button>
+                    <button class="q2_o2" onclick="answer22()">Black</button>
+                    <button class="q2_o3" onclick="answer23()">Red</button>
+                    <button class="q2_o4" onclick="answer24()">Brown</button>
+                </div>
             </div>
-        </div>
-        <div class="winner_backer">
-            <div class="winner_logo"></div>
-            <div class="winner_text">100% result? congratulations</div>
-            <div class="winner_text">Now she is your queen</div>
-            <div class="winner_text">Her majesty, the queeeen 262!</div>
-            <button class="try_again" onclick="tryAgain()">try again</button>
+            <div class="question3_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        What is she doing during her freetime?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q3_o1" onclick="answer31()">Watching films</button>
+                    <button class="q3_o2" onclick="answer32()">Jogging</button>
+                    <button class="q3_o3" onclick="answer33()">Reading</button>
+                    <button class="q3_o4" onclick="answer34()">Sleeping</button>
+                </div>
+            </div>
+            <div class="question4_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        What color is her eyes?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q4_o1" onclick="answer41()">Brown</button>
+                    <button class="q4_o4" onclick="answer44()">None of these</button>
+                    <button class="q4_o2" onclick="answer42()">Green</button>
+                    <button class="q4_o3" onclick="answer43()">Blue</button>
+                </div>
+            </div>
+            <div class="question5_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        On the scale from 1 to 10 (1 lowest, 10 highest) how would you
+                        estimate her beauty?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q5_o2" onclick="answer52()">4-6</button>
+                    <button class="q5_o1" onclick="answer51()">1-3</button>
+                    <button class="q5_o4" onclick="answer54()">10+</button>
+                    <button class="q5_o3" onclick="answer53()">7-9</button>
+                </div>
+            </div>
+            <div class="question6_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        On the scale from 1 to 10 (1 lowest, 10 highest) how kind and
+                        important is she?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q6_o4" onclick="answer64()">10+</button>
+                    <button class="q6_o1" onclick="answer61()">1-3</button>
+                    <button class="q6_o3" onclick="answer63()">7-9</button>
+                    <button class="q6_o2" onclick="answer62()">4-6</button>
+                </div>
+            </div>
+            <div class="question7_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        If you wanted to gift her something, what should she make her happy?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q7_o4" onclick="answer74()">All mentioned</button>
+                    <button class="q7_o2" onclick="answer72()">Sweets</button>
+                    <button class="q7_o3" onclick="answer73()">Jelly and snacks</button>
+                    <button class="q7_o1" onclick="answer71()">Flowers</button>
+                </div>
+            </div>
+            <div class="question8_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        If you need any help, how you must contact her?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q8_o1" onclick="answer81()">Text via personal social means</button>
+                    <button class="q8_o3" onclick="answer83()">Slack non-stop calls</button>
+                    <button class="q8_o4" onclick="answer84()">All mentioned above</button>
+                    <button class="q8_o2" onclick="answer82()">Text via slack and wait politely</button>
+                </div>
+            </div>
+            <div class="question9_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        If she is not responding on texts, what should you do?
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q9_o4" onclick="answer94()">Find another person to get help</button>
+                    <button class="q9_o1" onclick="answer91()">Ask if she's doing ok</button>
+                    <button class="q9_o3" onclick="answer93()">Don't do anything and wait</button>
+                    <button class="q9_o2" onclick="answer92()">Don't ask but get nervous</button>
+                </div>
+            </div>
+            <div class="question10_backer">
+                <div class="question_upper">
+                    <p class="question_text">
+                        Do you accept her as your Queen and you as her Knight to serve in any case? (2 points)
+                    </p>
+                </div>
+                <div class="question_lower">
+                    <button class="q10_o1" onclick="answer101()">Yes, I do</button>
+                    <button class="q10_o2" onclick="answer102()">No, I do not</button>
+                </div>
+            </div>
+            <div class="result_backer_win">
+                <div class="result_upper">
+                    <div class="image_area_hug"></div>
+                </div>
+                <div class="result_lower">
+                    <p class="winner_text">
+                        Congratulations! Here you have the well deserved hug from her.
+                    </p>
+                    <button class="travel_again" onclick="winAgain()">Travel again</button>
+                </div>
+            </div>
+            <div class="result_backer_fail">
+                <div class="result_upper">
+                    <div class="image_area_fail"></div>
+                </div>
+                <div class="result_lower">
+                    <p class="winner_text">
+                        You didn't get 90%?
+                    </p>
+                    <p class="winner_text">
+                        You don't deserve a surprise sadly, but read that book, practice makes better.
+                    </p>
+                    <button class="try_again" onclick="tryAgain()">Try again</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
