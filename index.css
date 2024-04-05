@@ -148,6 +148,7 @@ body {
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .start_button:hover {
@@ -561,6 +562,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.5s ease;
 }
 
 .travel_again:hover {
@@ -597,6 +599,7 @@ body {
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 20px;
+    transition: 0.5s ease;
 }
 
 .try_again:hover {
